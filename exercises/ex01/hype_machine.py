@@ -1,5 +1,6 @@
-# TODO: Write docstring here
+"""Program to build self esteem"""
 
-# TODO: Initialize __author__ variable here
-
-# TODO: Implement your program logic here
+name: str = input("What is your name? ")
+print(name + " is the best!")
+print("The world is yours, " + name + "!!")
+print("Take this advice, "+ name + "“, live as if you were to die tomorrow!")
