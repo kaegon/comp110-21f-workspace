@@ -93,12 +93,14 @@ def do_gpa(a: float) -> int:
 
 def ec(extras: int) -> int:
     """Evaluates extracurriculars."""
+    points: int = 0
     if extras > 1:
-        return 2
+        points += 1
     elif extras > 0:
-        return 1
+        points += 1
     elif extras <= 0:
-        return 0
+        points == 0
+    return points
 
 
 def randomness() -> int:
