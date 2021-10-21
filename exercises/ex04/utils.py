@@ -52,8 +52,6 @@ def max(input: list[int]) -> int:
         i += 1 
     return input[0]
 
-
-
                 
             
         
