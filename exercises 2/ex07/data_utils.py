@@ -17,7 +17,7 @@ def read_csv_rows(filename: str) -> list[dict[str, str]]:
 
 
 def column_values(table: list[dict[str, str]], column: str) -> list[str]:
-    """Prodcue a list[str] of all values in a single column."""
+    "Prodcue a list[str] of all values in a single column."
     result: list[str] = []
     for row in table:
         item: str = row[column]
@@ -42,12 +42,9 @@ def head(whole: dict[str, list[str]], n: int) -> dict[str, list[str]]:
     for x in whole:
         y = []
         for z in whole[x]:
-            if n == 0:
-                result[x] = []
-            else:
-                y.append(z)
-                if len(y) == n:
-                    break   
+            y.append(z)
+            if len(y) == n:
+                break   
         result[x] = y
     return result
 
